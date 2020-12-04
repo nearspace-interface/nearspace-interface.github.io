@@ -9,6 +9,7 @@
   "author": "Bejuco",
   "license": "ISC",
   "dependencies": {
+    "list.js": "^2.3.0",
     "mmenu-js": "^8.5.20"
   }
 }

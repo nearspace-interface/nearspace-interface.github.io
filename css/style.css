@@ -1,11 +1,149 @@
-body {
+/* GLOBAL */
+body{
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.BERTIN1953 {
+figure{
+  margin: 0;
+  padding: 0;
+}
+
+/* HOME */
+#home_title{
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  width: 8%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* MAIN */
+#container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu */
+.menu{
+  position: fixed;
+  width: 93%;
+  padding: 1vh 3vw 0 3vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+.menu_logo{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.menu_links{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu_links_title{
+  margin-left: 1.5vw;
+}
+
+/* Content */
+.content{
+  margin: 0 auto;
+  padding-top: 15vh;
+  flex-grow: 1;
   width: 50%;
-  height: 50%;
+}
+
+.completo_column{
+  width: 100%;
+  margin: 0 auto 70px auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.completo_row{
+  width: 100%;
+  margin: 0 auto 70px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mitad{
+  width: 50%;
+  margin: 0 auto 5% auto;
+}
+
+.page_footer {
+  margin: 5vh auto 2.5vh auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* FONTS */
+p, h2, h4{
+  font-family: 'Space Mono', monospace; font-style: normal;
+  color: #212121;
+}
+
+p{
+  font-weight: normal;
+}
+
+h2{
+  font-weight: bold;
+}
+
+h4{
+  font-weight: normal;
+}
+
+.titulo_proyecto{
+  line-height: 0.1;
+}
+
+figcaption{
+  font-family: 'Space Mono', monospace; font-style: normal;
+  color: #212121;
+  font-size: 0.8em;
+}
+
+a.link_normal:link, a.link_texto:link, a.link_data:link{
+  transition: color .2s linear;
+  color: #212121;
+  text-decoration: none;
+}
+a.link_normal:link{
+  text-decoration: none;
+}
+a.link_texto:link{
+  text-decoration: underline;
+}
+a.link_data:link{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a.link_normal:visited, a.link_data_visited{
+  color: #212121;
+  text-decoration: none;
+}
+a.link_texto:visited{
+  color: #212121;
+  text-decoration: underline;
+}
+
+a.link_normal:hover, a.link_texto:hover, a.data:hover{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
 }

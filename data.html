@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Near Space Interface</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/data.css">
+
+	<script src="js/node_modules/list.js/dist/list.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="menu">
+			<div class="menu_logo">
+				<img src="resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+			</div>
+			<div class="menu_links">
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="projects.html">PROJECTS</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="#">DATA</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="team.html">TEAM</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="about.html">ABOUT</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="contact.html">CONTACT</a>
+				</h4>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="completo_column">
+				<p>
+					The following datasets have been used by Near Space Interface in some of its projects. Below you will find the name of the dataset or
+					the sensor used for its creation, the entity in charge of creating and managing the datasets, the period of time in which the data is available,
+					a short description and the format in which they can be downloaded. By clicking on the name, a document will open with the necessary
+					information for downloading, organizing, cleaning, previewing and visualizing the datasets, as well as links to additional documentation.
+					<br><br>
+					Most of the data used by NSI is <em>Open Data</em>, that is, data that can be freely used, re-used and redistributed by anyone*.
+					However, it can also be <em>open-access data</em>, which still requires registration and complex protocols for its use**.
+					<br><br>
+					* <em style="font-size:0.8em"><a class="link_normal" href="https://opendatahandbook.org/guide/en/what-is-open-data/">Open Data Handbook - What is Open Data?</a></em>
+					<br>
+					** <em style="font-size:0.8em"><a class="link_normal" href="https://www.territorialagency.com/oceansintransformation/oceans">Territorial Agency - Oceans in transformation</a></em>
+				</p>
+			</div>
+			<div id="datasets" class="completo_column">
+				<div class="datasets_controls">
+					<input class="search" placeholder="Search"/>
+					<button class="sort" data-sort="name">
+						Sort by name
+					</button>
+					<button class="sort" data-sort="format">
+						Sort by format
+					</button>
+				</div>
+				<ul class="list"></ul>
+			</div>
+		</div>
+
+		<footer>
+			<div class="page_footer">
+				<p>
+					<a class="link_normal" href="index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<br>
+					©2020 Near Space Interface
+					<br>
+					Bogotá, Colombia
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="js/data.js"></script>
+</body>
+</html>
