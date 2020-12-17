@@ -9,7 +9,11 @@
   "author": "Bejuco",
   "license": "ISC",
   "dependencies": {
+    "@swup/scripts-plugin": "^1.1.0",
+    "@swup/scroll-plugin": "^1.0.6",
     "list.js": "^2.3.0",
-    "mmenu-js": "^8.5.20"
+    "mhead-js": "^2.1.0",
+    "mmenu-js": "^8.5.20",
+    "swup": "^2.0.13"
   }
 }

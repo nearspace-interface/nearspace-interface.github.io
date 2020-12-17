@@ -1,9 +1,20 @@
+/* TRANSITION */
+.transition-fade{
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 /* GLOBAL */
 body{
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
+    background-color: #FFF;
 }
 
 figure{
@@ -11,17 +22,39 @@ figure{
   padding: 0;
 }
 
+hr{
+  color: #E2DBD0;
+}
+
+table{
+  width: 100%;
+}
+
+input{
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+
+input:focus{
+  outline:none;
+  border-color:#aaa;
+}
+
 /* HOME */
 #home_title{
   position: absolute;
   top: 90%;
-  left: 45%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
   width: 8%;
   height: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
+  z-index: 100;
 }
 
 /* MAIN */
@@ -32,9 +65,11 @@ figure{
   flex-direction: column;
 }
 
-/* Menu */
+/* MENU */
 .menu{
   position: fixed;
+  top: 0;
+  left: 0;
   width: 93%;
   padding: 1vh 3vw 0 3vw;
   display: flex;
@@ -56,6 +91,27 @@ figure{
   margin-left: 1.5vw;
 }
 
+#menu-phone {
+  height: 50px;
+  align-items: center;
+  background: #FFF;
+}
+
+#menu-trigger{
+  display: none;
+}
+
+.mm-navbar__title{
+  font-family: 'Space Mono', monospace; font-style: normal;
+  color: #212121;
+}
+
+.mm-panel {
+  --mm-color-background: #fff;
+  --mm-color-text: #212121;
+  z-index: -1;
+}
+
 /* Content */
 .content{
   margin: 0 auto;
@@ -66,7 +122,7 @@ figure{
 
 .completo_column{
   width: 100%;
-  margin: 0 auto 70px auto;
+  margin: 0 auto 80px auto;
   display: flex;
   flex-flow: column wrap;
 }
@@ -83,14 +139,153 @@ figure{
   margin: 0 auto 5% auto;
 }
 
+.project_about{
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.project_about p{
+  line-height: 1.1;
+}
+
 .page_footer {
   margin: 5vh auto 2.5vh auto;
   text-align: center;
   font-size: 0.8em;
 }
 
+/* DATA */
+#datasets.list{
+  font-family: 'Space Mono', monospace;
+  color: #212121;
+}
+
+#datasets > ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+#datasets > ul > li{
+  margin: 0 0 70px 0;
+}
+
+#datasets > ul > li:hover{
+  background-color: #E2DBD0;
+}
+
+#datasets > ul > li > p{
+  margin: 0;
+}
+
+.sort{
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#212121;
+  text-decoration: none;
+  background-color: #E2DBD0;
+  height:30px;
+}
+
+.sort:hover{
+  text-decoration: none;
+  background-color:#6e50ff;
+}
+
+.sort:focus{
+  outline:none;
+}
+
+.sort:after{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.sort.asc:after{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+
+.sort.desc:after{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+/* RESPONSIVE */
+/* For tablets: */
+@media only screen and (max-width:768px) {
+  #home_title{
+    width: 20%;
+  }
+
+  .menu_links_title{
+    margin-left: 5vw;
+  }
+
+  .content{
+    width: 90%;
+  }
+}
+
+/* For phones: */
+@media only screen and (max-width: 480px) {
+  button{
+    margin-bottom: 10px;
+  }
+
+  #home_title{
+    width: 30%;
+  }
+
+
+  .menu_logo, .menu_links{
+    display: none;
+  }
+
+  #menu-trigger{
+    display: flex;
+    margin-top: -5px;
+    background-color: #FFF;
+  }
+
+  .content{
+    padding-top: 10vh;
+    width: 85%;
+  }
+
+  .completo_row{
+    flex-flow: column wrap;
+  }
+
+  .mitad{
+    width: 85%;
+  }
+}
+
 /* FONTS */
-p, h2, h4{
+p, h1, h2, h3, h4, ul, li{
   font-family: 'Space Mono', monospace; font-style: normal;
   color: #212121;
 }
@@ -99,7 +294,7 @@ p{
   font-weight: normal;
 }
 
-h2{
+h1, h2{
   font-weight: bold;
 }
 
@@ -129,8 +324,11 @@ a.link_texto:link{
   text-decoration: underline;
 }
 a.link_data:link{
-  font-size: 1.5em;
   font-weight: bold;
+  margin-right: 10px;
+}
+a.link_menu:link{
+  font-size: 3em;
 }
 
 a.link_normal:visited, a.link_data_visited{

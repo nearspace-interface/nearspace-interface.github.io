@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Red de Monitoreo de Calidad del aire de Bogotá (RMCAB)",
+    "entity": "Secretaria Distrital de Ambiente",
+    "period": "2010 - Present",
+    "about":"The RMCAB is made up of 13 static monitoring stations and a mobile station, located in different parts of the city, equipped with the latest technology equipment that allows continuous monitoring of the concentrations of particulate material (PM10, PST, PM2.5) , of polluting gases (SO2, NO2, CO, O3) and of the meteorological variables of precipitation, wind speed and direction, temperature, solar radiation, relative humidity and barometric pressure.",
+    "format":".xlsx",
+    "descarga_español":"#",
+    "descarga_ingles":"#"
+  },
+  {
+    "name": "Cloud – Aerosol LIDAR Infrared Pathfinder Satellite Observations (CALIPSO)",
+    "entity":"NASA's Langley Research Center | Centre national d'études spatiales (CNES)",
+    "period": "2006 - Present",
+    "about": "The CALIPSO payload consists of three co-aligned, near-nadir viewing instruments: a 2-wavelength polarization-sensitive lidar, an imaging infrared radiometer (IIR), and a high-resolution wide field camera (WFC). CALIOP is the name of the CALIPSO lidar and is an acronym for Cloud-Aerosol Lidar with Orthogonal Polarization. The lidar profiles provide information on the vertical distribution of aerosols and clouds, cloud particle phase, and classification of aerosol size.",
+    "format": ".hdf",
+    "descarga_español": "#",
+    "descarga_ingles": "#"
+  },
+  {
+    "name": "Earth Science Data Systems (ESDS)",
+    "entity": "National Aeronautics and Space Administration (NASA)",
+    "period": "≈1994 - Present",
+    "about": "The ESDS program oversees the life cycle of NASA’s Earth science data—from acquisition through processing and distribution. The primary goal of ESDS is to maximize the scientific return from NASAs missions and experiments for research and applied scientists, decision makers, and society at large.",
+    "format": ".txt .tif .jpg .gif .tfw .nc .hdf",
+    "descarga_español":"#",
+    "descarga_ingles": "#"
+  },
+  {
+    "name": "Queimadas e Incêndios Florestais - Monitoramento Orbital e Risco de Fogo",
+    "entity": "Instituto Nacional de Pesquisas Espaciais (INPE)",
+    "period": "1998 - Present",
+    "about": "A portal developed at INPE, National Institute for Space Research to follow up the occurrence of fire in vegetation. It includes the operational monitoring of outbreaks of active fires and forest fires detected by satellites, and the calculation and prediction of vegetation fire risk, in addition to mapping scars in the Burned Area.. It includes the operational monitoring of outbreaks of active fires and forest fires detected by satellites, and the calculation and prediction of vegetation fire risk, in addition to mapping scars in the Burned Area.",
+    "format": ".csv .json",
+    "descarga_español": "#",
+    "descarga_ingles": "#"
+  }
+]

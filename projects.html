@@ -5,54 +5,82 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
+
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div class="menu">
+		<div class="menu Fixed">
 			<div class="menu_logo">
-				<img src="resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
 			</div>
 			<div class="menu_links">
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="#">PROJECTS</a>
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="data.html">DATA</a>
+					<a class="link_normal" href="/data.html">DATA</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="team.html">TEAM</a>
+					<a class="link_normal" href="/people.html">PEOPLE</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="about.html">ABOUT</a>
+					<a class="link_normal" href="/about.html">ABOUT</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="contact.html">CONTACT</a>
+					<a class="link_normal" href="/contact.html">CONTACT</a>
 				</h4>
 			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="content">
+		<div id="swup" class="content transition-fade">
 			<div class="completo_column">
 				<div>
-					<img src="https://blackhistory360.files.wordpress.com/2015/01/sao-paulo-brazil.jpg" width="100%"/>
-					<h2 class="titulo_proyecto">Saotá</h2>
-					<p>
-						Collab w| Fernando Velazquez
-					</p>
+					<a class="link_normal" href="/projects/saota/saota.html">
+						<img src="/projects/saota/images/saota_cover.png" width="100%"/>
+						<h2 class="titulo_proyecto">Sãotá</h2>
+						<p>
+							Collaboration with Fernando Velazquez: a 3D environment in which two neighborhoods of São Paulo and two of Bogotá merge in a single mesh under a dynamic point cloud created using open-access data.
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="completo_column">
 				<div>
-					<img src="https://specials-images.forbesimg.com/imageserve/5ef0ebe0e782210007a90fb9/960x0.jpg" width="100%"/>
-					<h2 class="titulo_proyecto">Sahara</h2>
-					<p>
-						Sahara dust plume
-					</p>
+					<a class="link_normal" href="/projects/sahara/sahara.html">
+						<img src="/projects/sahara/images/sahara_cover.gif" width="100%"/>
+						<h2 class="titulo_proyecto">Sahara dust plume</h2>
+						<p>
+							NSI pilot project: an exploration of datasets used to study the massive Saharan dust cloud from mid 2020.
+						</p>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -60,7 +88,7 @@
 		<footer>
 			<div class="page_footer">
 				<p>
-					<a class="link_normal" href="index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
 					<br>
 					©2020 Near Space Interface
 					<br>
@@ -69,5 +97,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="/js/main.js" data-swup-ignore-script></script>
 </body>
 </html>

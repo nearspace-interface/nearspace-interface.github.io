@@ -5,50 +5,68 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/data.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
 
-	<script src="js/node_modules/list.js/dist/list.min.js"></script>
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div class="menu">
+		<div class="menu Fixed">
 			<div class="menu_logo">
-				<img src="resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
 			</div>
 			<div class="menu_links">
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="projects.html">PROJECTS</a>
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="#">DATA</a>
+					<a class="link_normal" href="/data.html">DATA</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="team.html">TEAM</a>
+					<a class="link_normal" href="/people.html">PEOPLE</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="about.html">ABOUT</a>
+					<a class="link_normal" href="/about.html">ABOUT</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="contact.html">CONTACT</a>
+					<a class="link_normal" href="/contact.html">CONTACT</a>
 				</h4>
 			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="content">
+		<div id="swup" class="content transition-fade">
 			<div class="completo_column">
+				<h2>Data documentation archive</h2>
 				<p>
-					The following datasets have been used by Near Space Interface in some of its projects. Below you will find the name of the dataset or
-					the sensor used for its creation, the entity in charge of creating and managing the datasets, the period of time in which the data is available,
-					a short description and the format in which they can be downloaded. By clicking on the name, a document will open with the necessary
-					information for downloading, organizing, cleaning, previewing and visualizing the datasets, as well as links to additional documentation.
+					The following datasets and data repositories have been used by Near Space Interface in some of its projects. Below you will find the name of the dataset, repository or sensor used for its creation, the entity in charge of creating and managing the datasets, the period of time in which the data is available, a short description, the format in which they can be downloaded and <strong>the links to download the document with the necessary information for downloading, organizing, cleaning, previewing and visualizing the datasets, as well as links to additional documentation.</strong>
 					<br><br>
-					Most of the data used by NSI is <em>Open Data</em>, that is, data that can be freely used, re-used and redistributed by anyone*.
-					However, it can also be <em>open-access data</em>, which still requires registration and complex protocols for its use**.
+					Most of the data used by NSI is <em>Open Data</em>, that is, data that can be freely used, re-used and redistributed by anyone*. However, it can also be <em>open-access data</em>, which still requires registration and complex protocols for its use**.
 					<br><br>
 					* <em style="font-size:0.8em"><a class="link_normal" href="https://opendatahandbook.org/guide/en/what-is-open-data/">Open Data Handbook - What is Open Data?</a></em>
 					<br>
@@ -72,7 +90,7 @@
 		<footer>
 			<div class="page_footer">
 				<p>
-					<a class="link_normal" href="index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
 					<br>
 					©2020 Near Space Interface
 					<br>
@@ -81,6 +99,6 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/data.js"></script>
+	<script src="/js/main.js" data-swup-ignore-script></script>
 </body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sãotá | Near Space Interface</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
+
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="menu Fixed">
+			<div class="menu_logo">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
+			</div>
+			<div class="menu_links">
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/data.html">DATA</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/people.html">PEOPLE</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/about.html">ABOUT</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/contact.html">CONTACT</a>
+				</h4>
+			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="swup" class="content transition-fade">
+			<div class="completo_column">
+				<div class="glitch-embed-wrap" style="height: 480px; width: 100%;">
+					<iframe src="https://glitch.com/embed/#!/embed/saopaulo-bogota-remix?path=index.html&previewSize=100&attributionHidden=true" title="saopaulo-bogota-remix on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;"></iframe>
+				</div>
+			</div>
+			<div class="completo_column">
+				<div class="project_about">
+					<h1>Sãotá</h1>
+					<h3>2020</h3>
+					<h3 style="color:#5BC430">Surface and Upper Mantle Data Observatory</h3>
+					<p>A collaboration between Andrés Burbano, <a class="link_texto" href="https://fernandovelazquez.art/">Fernando Velázquez</a> and Pierre Puentes</p>
+				</div>
+				<p>
+					The Borgean dilemma of the map as a decal of the territory on a 1:1 scale has its obsolescence programmed. We inhabit urban spaces faced with the data that they themselves produce, we live in times in which data has gone from being a mere descriptor to being part integral of the urban ecosystem. The conventional map becomes anachronistic and dysfunctional.
+					<br><br>
+					In the context of a global mutation of the geopolitics of knowledge, in cities in the global south, this confronts us with tensions and phenomena that happen simultaneously: the over-exploitation of big-data that reaffirms questionable economic structures, and decision-making without knowledge of the data, reproducing the traditional structures of precariousness.
+					<br><br>
+					Sãotá consists of a 3D environment for the web, in which two neighborhoods of São Paulo (Higienópolis, Paraisópolis) and two of Bogotá (La Candelaria and Chapinero), which are characterized by having diverse socioeconomic profiles, merge in a single mesh under a dynamic point cloud created using data provided by public entities. The project is an appeal to subjectivity in the interpretation of big data and its algorithmic processing. In it we seek to question the apparent objectivity of the data and the algorithms that articulate them, and to highlight the need to elaborate methodologies with a subjective bias that articulate the territory from humanistic and not merely economic perspectives.
+					<br><br>
+					With the creation of this visible and navigable meta-city, but nonexistent and adrift, we seek to expose some of the invisible layers, that are essential for the understanding of the territory and urban air space such as the dust cloud of the Sahara desert, which after traveling thousands of kilometers in the Atlantic Ocean and crossing the whole continent, paradoxically represents a risk to human health and an abundance of nutrients for tropical forests and diverse ecosystems, including the urban ecosystem.
+					<br><br>
+					Sãotá v1.0 combines 3 main technical components:
+					<ul>
+						<li><a class="link_texto" href="https://aframe.io/">A-Frame</a> as the main construction and prototyping framework, with <a class="link_texto" href="https://glitch.com/">Glitch</a> as the programming and deployment platform.</li>
+						<li><a class="link_texto" href="https://www.blender.org/">Blender</a> as the 3D workflow tool. The following plugins were used:
+							<ul>
+								<li><a class="link_texto" href="https://github.com/eliemichel/MapsModelsImporter">Maps Models Importer by Elie Michel</a> to import three-dimensional models from Google Maps.</li>
+								<li><a class="link_texto" href="https://github.com/domlysz/BlenderGIS">Blender GIS by domlysz</a> to import geographic information</li>
+								<li><a class="link_texto" href="https://github.com/Griperis/BlenderDataVis/">BlenderDataVis by Zdeněk Doležal</a> to import datasets.</li>
+								<li><a class="link_texto" href="https://github.com/JacquesLucke/animation_nodes">Animation Nodes by Jacques Lucke</a> to create and manipulate dynamic elements.</li>
+							</ul>
+						</li>
+						<li>Datasets used for the creation of the dynamic point cloud:
+							<ul>
+								<li>PM2.5 index of the San Cristóbal and Móvil Séptima (Bogotá) stations from March to July 2020 provided by the <a class="link_texto" href="http://rmcab.ambientebogota.gov.co/home/map">RMCA</a>.</li>
+								<li>Burned area (km²) in Amazônia (Brazil) from 2010 to 2020 provided by <a class="link_texto" href="https://lasa.ufrj.br/">LASA</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<div class="page_footer">
+				<p>
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<br>
+					©2020 Near Space Interface
+					<br>
+					Bogotá, Colombia
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="/js/main.js" data-swup-ignore-script></script>
+</body>
+</html>

@@ -5,59 +5,73 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
+
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div class="menu">
+		<div class="menu Fixed">
 			<div class="menu_logo">
-				<img src="resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
 			</div>
 			<div class="menu_links">
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="projects.html">PROJECTS</a>
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="data.html">DATA</a>
+					<a class="link_normal" href="/data.html">DATA</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="team.html">TEAM</a>
+					<a class="link_normal" href="/people.html">PEOPLE</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="#">ABOUT</a>
+					<a class="link_normal" href="/about.html">ABOUT</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="contact.html">CONTACT</a>
+					<a class="link_normal" href="/contact.html">CONTACT</a>
 				</h4>
 			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="content">
+		<div id="swup" class="content transition-fade">
 			<div class="completo_column">
 				<figure>
-					<img src="resources/images/nsi_ilustration_2.png" alt="nsi_ilustration_1" width="100%"/>
-					<figcaption>
-						Branding by <a class="link_normal" href="https://www.instagram.com/michellemildenberg/">Michelle Mildenberg Lara</a>
-					</figcaption>
+					<img src="/resources/images/nsi_ilustration_2.png" alt="nsi_ilustration_1" width="100%"/>
 				</figure>
-				<p>
+				<h3>
 					What theoretical benefit can the repositioning of Bogotá, Colombia not as a city but as a sensitive,
 					multi-dimensional membrane that transduces changes of the physical world into binary information provide?
-					This project proposes that doing so can provide a synecdochic window on the Earth and the homeostasis it
-					seeks in adapting dynamically to the forces of the cosmos. Recent events that inspire this exploration
-					include <a class="link_texto" href="https://www.nasa.gov/feature/langley/nasa-cnes-space-laser-measures-massive-saharan-dust-plume">a massive cloud of Saharan dust
-					that transformed air quality in June 2020</a>, <a class="link_texto" href="https://www.eltiempo.com/colombia/otras-ciudades/loon-project-el-objeto-que-cayo-en-tolima-67458">the crash of a Loon
-					Project high-altitude helium balloon in Central Colombia in March 2017</a>, and the ongoing dynamics of
-					the COVID-19 pandemic. The centrality of Bogotá is an intentional nod to the <a class="link_texto" href="https://bogotadeclaration.wordpress.com/declaration-of-1976/">Bogotá Declaration</a> signed
-					in 1976 by Equatorial countries declaring sovereignty over geostationary orbit above their territory.
-					The larger remit of the work, though, is an inquiry into planetary phenomena. These include the new emissions
-					and pollution of the Anthropocene as well as the deeply telluric, deep-time forces inherent to the planet.
-					<br>
-					<br>
+				</h3>
+				<p>
+					This project proposes that doing so can provide a synecdochic window on the Earth and the homeostasis it seeks in adapting dynamically to the forces of the cosmos. Recent events that inspire this exploration include <a class="link_texto" href="https://www.nasa.gov/feature/langley/nasa-cnes-space-laser-measures-massive-saharan-dust-plume">a massive cloud of Saharan dust that transformed air quality in June 2020</a>, <a class="link_texto" href="https://www.eltiempo.com/colombia/otras-ciudades/loon-project-el-objeto-que-cayo-en-tolima-67458">the crash of a Loon Project high-altitude helium balloon in Central Colombia in March 2017</a>, and the ongoing dynamics of the COVID-19 pandemic. The centrality of Bogotá is an intentional nod to the <a class="link_texto" href="https://bogotadeclaration.wordpress.com/declaration-of-1976/">Bogotá Declaration</a> signed in 1976 by Equatorial countries declaring sovereignty over geostationary orbit above their territory. The larger remit of the work, though, is an inquiry into planetary phenomena. These include the new emissions and pollution of the Anthropocene as well as the deeply telluric, deep-time forces inherent to the planet.
+					<br><br>
 					Near Space Interface focuses on the troposphere and stratosphere as extensions of Bogotá and establishes three interlinked components:
 				</p>
 				<br>
@@ -75,7 +89,7 @@
 		<footer>
 			<div class="page_footer">
 				<p>
-					<a class="link_normal" href="index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
 					<br>
 					©2020 Near Space Interface
 					<br>
@@ -84,5 +98,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="/js/main.js" data-swup-ignore-script></script>
 </body>
 </html>

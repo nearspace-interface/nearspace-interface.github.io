@@ -5,47 +5,73 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
+
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div class="menu">
+		<div class="menu Fixed">
 			<div class="menu_logo">
-				<img src="resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
 			</div>
 			<div class="menu_links">
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="projects.html">PROJECTS</a>
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="data.html">DATA</a>
+					<a class="link_normal" href="/data.html">DATA</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="team.html">TEAM</a>
+					<a class="link_normal" href="/people.html">PEOPLE</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="about.html">ABOUT</a>
+					<a class="link_normal" href="/about.html">ABOUT</a>
 				</h4>
 				<h4 class="menu_links_title">
-					<a class="link_normal" href="#">CONTACT</a>
+					<a class="link_normal" href="/contact.html">CONTACT</a>
 				</h4>
 			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="content">
+		<div id="swup" class="content transition-fade">
 			<div class="completo_column" style="height:100%">
-				<h2 style="text-align:center"><a class="link_normal" href="mailto:nearspaceinterface@gmail.com">nearspaceinterface@gmail.com</a></h2>
-				<h2 style="text-align:center"><a class="link_normal" href="https://github.com/nearspace-interface">GitHub</a></h2>
+				<h3 style="text-align:center"><a class="link_normal link_texto" href="mailto:nearspaceinterface@gmail.com">nearspaceinterface@gmail.com</a></h3>
+				<h3 style="text-align:center"><a class="link_normal link_texto" href="https://github.com/nearspace-interface">GitHub</a></h3>
+				<h3 style="text-align:center"><a class="link_normal link_texto" href="https://observablehq.com/@nearspace-interface">Observable</a></h3>
+			</div>
 		</div>
 
 		<footer>
 			<div class="page_footer">
 				<p>
-					<a class="link_normal" href="index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
 					<br>
 					©2020 Near Space Interface
 					<br>
@@ -54,5 +80,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="/js/main.js" data-swup-ignore-script></script>
 </body>
 </html>

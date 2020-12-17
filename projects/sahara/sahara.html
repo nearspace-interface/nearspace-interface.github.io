@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sahara | Near Space Interface</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/js/node_modules/mmenu-js/dist/mmenu.css">
+	<link rel="stylesheet" href="/js/node_modules/mhead-js/dist/mhead.css">
+
+	<script src="/js/node_modules/mhead-js/dist/mhead.js"></script>
+	<script src="/js/node_modules/mmenu-js/dist/mmenu.js"></script>
+	<script src="/js/node_modules/swup/dist/swup.min.js"></script>
+	<script src="/js/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+	<script src="/js/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
+	<script src="/js/node_modules/list.js/dist/list.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="menu Fixed">
+			<div class="menu_logo">
+				<a href="/projects.html">
+					<img src="/resources/images/nsi_logo_negro_1.png" alt="nsi_logo" width="100">
+				</a>
+			</div>
+			<div class="menu_links">
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/projects.html">PROJECTS</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/data.html">DATA</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/people.html">PEOPLE</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/about.html">ABOUT</a>
+				</h4>
+				<h4 class="menu_links_title">
+					<a class="link_normal" href="/contact.html">CONTACT</a>
+				</h4>
+			</div>
+
+			<div id="menu-phone">
+				<a id="menu-trigger" class="link_normal link_menu" href="#menu-panel">☰</a>
+			</div>
+			<nav id="menu-panel">
+				<ul>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/data.html">Data</a></li>
+					<li><a href="/people.html">People</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="swup" class="content transition-fade">
+			<div class="completo_column">
+				<img src="/projects/sahara/images/sahara_cover.gif" alt="sahara_dust" width="100%" height="auto">
+			</div>
+			<div class="completo_column">
+				<div class="project_about">
+					<h1>Sahara dust plume</h1>
+					<h3>2020</h3>
+					<h3 style="color:#6E50FF">Lower Stratosphere Creative Research Center</h3>
+					<h3 style="color:#5BC430">Surface and Upper Mantle Data Observatory</h3>
+					<p>NSI pilot project: an exploration of datasets used to study the massive Saharan dust cloud from mid 2020.</p>
+				</div>
+				<p>
+					The NSI pilot project was built around one of the events that inspired its creation: the transformation of Bogotá's air quality as a result of the arrival of a large cloud of dust from the Sahara desert. This great movement of particulate material is one of the most important sources of nutrients for marine life in the Atlantic Ocean and the Amazon rainforest and plays an important role in the dispersion and reflection of solar radiation, contributing to the cooling of the atmosphere. However, its relationship with the city and urban ecosystems is different because, when reaching populated centers, the dust of the Sahara poses a risk to the health of its inhabitants.
+					<br><br>
+					<strong>What data is available to explore, observe or analyze this type of event in the city of Bogotá?</strong>
+					<br><br>
+					<strong>What is the incidence of the dust cloud in the atmosphere and in other environmental factors of the city of Bogotá?</strong>
+					<br><br>
+					<strong>How to use the data found with digital visualization tools?	</strong>
+					<br><br>
+					<h2>Project results include:</h2>
+					<ul>
+						<li>
+							<h3>
+								<a class="link_texto" href="/data.html">Two documents</a> with the necessary information for downloading, manipulating, editing and visualizing of data from NASA's CALIPSO satellite and from RMCAB stations.
+							</h3>
+						</li>
+						<li>
+							<h3>
+								An Observable daily log with details of the tools and datasets explored (in spanish):
+							</h3>
+							<ul>
+								<li> <a class="link_texto"href="https://observablehq.com/@nearspace-interface/bitacora-nsi-08-2020">August</a> </li>
+								<li> <a class="link_texto" href="https://observablehq.com/@nearspace-interface/bitacora-nsi-09-2020">September</a> </li>
+								<li> <a class="link_texto" href="https://observablehq.com/@nearspace-interface/bitacora-nsi-10-2020">October</a> </li>
+							</ul>
+						</li>
+						<li>
+							<h3>A data visualization using the deck.gl library:</h3>
+							<iframe width="100%" height="1212" frameborder="0" src="https://observablehq.com/embed/@nearspace-interface/bogota-pm2-5?cell=container&cell=viewof+time&cell=viewof+velocidad&cell=viewof+radiusPixels&cell=viewof+threshold&cell=viewof+intensity"></iframe>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<div class="page_footer">
+				<p>
+					<a class="link_normal" href="/index.html">Intro page</a> made with <a class="link_normal" href="https://github.com/d3/d3-geo">d3-geo</a>.
+					<br>
+					©2020 Near Space Interface
+					<br>
+					Bogotá, Colombia
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="/js/main.js" data-swup-ignore-script></script>
+</body>
+</html>
