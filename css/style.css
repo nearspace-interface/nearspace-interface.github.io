@@ -14,7 +14,7 @@ body{
   height: 100vh;
   margin: 0;
   padding: 0;
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
 figure{
@@ -126,7 +126,6 @@ input:focus{
   display: flex;
   flex-flow: column wrap;
 }
-
 .completo_row{
   width: 100%;
   margin: 0 auto 70px auto;
@@ -143,7 +142,6 @@ input:focus{
   line-height: 1;
   margin-bottom: 20px;
 }
-
 .project_about p{
   line-height: 1.1;
 }
@@ -159,20 +157,16 @@ input:focus{
   font-family: 'Space Mono', monospace;
   color: #212121;
 }
-
 #datasets > ul{
   padding: 0;
   list-style-type: none;
 }
-
 #datasets > ul > li{
   margin: 0 0 70px 0;
 }
-
 #datasets > ul > li:hover{
   background-color: #E2DBD0;
 }
-
 #datasets > ul > li > p{
   margin: 0;
 }
@@ -187,16 +181,13 @@ input:focus{
   background-color: #E2DBD0;
   height:30px;
 }
-
 .sort:hover{
   text-decoration: none;
   background-color:#6e50ff;
 }
-
 .sort:focus{
   outline:none;
 }
-
 .sort:after{
   width: 0;
   height: 0;
@@ -208,7 +199,6 @@ input:focus{
   top:-10px;
   right:-5px;
 }
-
 .sort.asc:after{
   width: 0;
   height: 0;
@@ -220,7 +210,6 @@ input:focus{
   top:13px;
   right:-5px;
 }
-
 .sort.desc:after{
   width: 0;
   height: 0;
