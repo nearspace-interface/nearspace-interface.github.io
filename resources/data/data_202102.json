@@ -7,6 +7,6 @@
     "format":".xlsx",
     "status":"ok",
     "descarga_español":"../resources/data/data_docs/rmcab_001_esp.pdf",
-    "descarga_ingles":"#"
+    "descarga_ingles":"../resources/data/data_docs/rmcab_001_eng.pdf"
   }
 ]
