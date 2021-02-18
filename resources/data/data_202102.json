@@ -6,7 +6,7 @@
     "about":"The RMCAB is made up of 13 static monitoring stations and a mobile station, located in different parts of the city, equipped with the latest technology equipment that allows continuous monitoring of the concentrations of particulate material (PM10, PST, PM2.5) , of polluting gases (SO2, NO2, CO, O3) and of the meteorological variables of precipitation, wind speed and direction, temperature, solar radiation, relative humidity and barometric pressure.",
     "format":".xlsx",
     "status":"ok",
-    "descarga_español":"../resources/data/data_docs/rmcab_001_esp.pdf",
-    "descarga_ingles":"../resources/data/data_docs/rmcab_001_eng.pdf"
+    "descarga_español":"/resources/data/data_docs/rmcab_001_esp.pdf",
+    "descarga_ingles":"/resources/data/data_docs/rmcab_001_eng.pdf"
   }
 ]
