@@ -1,4 +1,4 @@
-d3.json('/resources/home/data/data.geojson').then(function(globe) {
+d3.json('/resources/home/data/data.json').then(function(globe) {
   const { height, width } = document.body.getBoundingClientRect();
 
   let projection = d3.geoStereographic();
