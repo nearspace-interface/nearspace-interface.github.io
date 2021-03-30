@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Red de Monitoreo de Calidad del aire de Bogotá (RMCAB)",
+    "entity": "Secretaria Distrital de Ambiente",
+    "period": "2010 - Present",
+    "about":"The RMCAB is made up of 13 static monitoring stations and a mobile station, located in different parts of the city, equipped with the latest technology equipment that allows continuous monitoring of the concentrations of particulate material (PM10, PST, PM2.5) , of polluting gases (SO2, NO2, CO, O3) and of the meteorological variables of precipitation, wind speed and direction, temperature, solar radiation, relative humidity and barometric pressure.",
+    "format":".xlsx",
+    "status":"ok",
+    "descarga_español":"../resources/data/data_docs/rmcab_001_esp.pdf",
+    "descarga_ingles":"../resources/data/data_docs/rmcab_001_eng.pdf"
+  },
+  {
+    "name": "Cloud – Aerosol LIDAR Infrared Pathfinder Satellite Observations (CALIPSO)",
+    "entity":"NASA's Langley Research Center | Centre national d'études spatiales (CNES)",
+    "period": "2006 - Present",
+    "about": "The CALIPSO payload consists of three co-aligned, near-nadir viewing instruments: a 2-wavelength polarization-sensitive lidar, an imaging infrared radiometer (IIR), and a high-resolution wide field camera (WFC). CALIOP is the name of the CALIPSO lidar and is an acronym for Cloud-Aerosol Lidar with Orthogonal Polarization. The lidar profiles provide information on the vertical distribution of aerosols and clouds, cloud particle phase, and classification of aerosol size.",
+    "format": ".hdf",
+    "status":"ok",
+    "descarga_español": "../resources/data/data_docs/calipso_001_esp.pdf",
+    "descarga_ingles": "../resources/data/data_docs/calipso_001_eng.pdf"
+  }
+]
